@@ -26,19 +26,21 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Material(
       child: new RaisedButton(
-          child: const Text('Mulai'),
-          color: Theme.of(context).accentColor,
-          elevation: 4.0,
-          splashColor: Colors.blue,
-          textColor: const Color(0xFFFFFFFF),
-          onPressed: (){
-            openNewSreen(context, TampilHalaman())
-      }),
+          child: const Text('Mulai') ,
+          color: Theme
+              .of(context)
+              .accentColor ,
+          elevation: 4.0 ,
+          splashColor: Colors.blue ,
+          textColor: const Color(0xFFFFFFFF) ,
+          onPressed: () {
+            openNewSreen(context , TampilHalaman());
+          }) ,
     );
-}
-
-  void openNewSreen(BuildContext context, Widget screen) {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => screen));
   }
 
+  void openNewSreen(BuildContext context , Widget screen) {
+    Navigator.push(context , MaterialPageRoute(builder: (context) => screen));
+  }
 
+}
