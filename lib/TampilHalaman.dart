@@ -6,7 +6,7 @@ class TampilHalaman extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Ilmuwan Islam"),
+        title: Text("Tuntunan Wudhu"),
       ),//AppBar
 
       body: PageView(
